@@ -1,0 +1,31 @@
+.media {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    padding-right: 1rem;
+    margin-left: 2rem;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.2);
+      color: #555; 
+    }
+    .dark & {
+      color: #f5f5f5;
+  
+      &:hover {
+        color: #ccc;
+  
+  }
+}
+  }
+  

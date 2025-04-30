@@ -1,16 +1,18 @@
-import './App.css'
-import workInProgressLogo from './assets/carol_at_work.png'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { MainPage } from "./components/MainPage";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { Projects } from "./pages/Projects";
 
-function App() {
-
-
+export default function App() {
   return (
-    <>
-      <div>
-        <img src={workInProgressLogo} className="workInProgressLogo" alt="Carol at Work" />
-      </div>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App
