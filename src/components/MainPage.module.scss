@@ -1,60 +1,61 @@
-  @media (max-width: 600px) {
+// Estilos responsivos
+@media (max-width: 600px) {
   .content {
     .intro {
       font-size: 2rem;
     }
-  }}
+  }
+}
 
+// Tema claro (padrão)
 .main {
-  height: 100svh; 
-  width: 100vw; 
+  height: 100svh;
+  width: 100vw;
   overflow: hidden;
   position: relative;
   padding: 2rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FAF9F8;
+  background-color: #faf9f8;
   color: black;
 
+  // Dark mode quando body tiver a classe .dark
+  :global(body.dark) & {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+}
 
-.dark  {
-  background-color: #121212;
-  color: #f5f5f5;
-}
-}
 .themeToggle {
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   padding: 0.5rem;
-  color: #f5c518; // um amarelo bonito
+  color: #f5c518;
 
   &:hover {
-    //transform: scale(1.2);
     transition: transform 0.3s ease;
   }
 
-  .dark & {
+  :global(body.dark) & {
     color: #ffd700;
-    
   }
 }
 
 a {
-color: inherit;
+  color: inherit;
 
-&:hover {
-  color: gray;
+  &:hover {
+    color: gray;
 
-  .dark & {
-    color: lightgray;
+    :global(body.dark) & {
+      color: lightgray;
+    }
   }
 }
-}
-
 
 .header {
   width: 100%;
@@ -70,6 +71,7 @@ color: inherit;
   .themeToggle {
     text-align: left;
   }
+
   .media {
     justify-content: center;
   }
@@ -108,6 +110,7 @@ color: inherit;
     text-decoration: underline;
   }
 }
+
 .footer {
   width: 100%;
   display: flex;
@@ -124,7 +127,6 @@ color: inherit;
   display: flex;
   flex-direction: column;
 
-  
   a {
     font-size: 1.8rem;
     font-family: "Times New Roman", Times, serif;
@@ -135,8 +137,13 @@ color: inherit;
     &:hover {
       color: gray;
     }
+
+    :global(body.dark) & {
+      color: #f5f5f5;
+
+      &:hover {
+        color: lightgray;
+      }
+    }
   }
 }
-
-  
-

@@ -1,19 +1,17 @@
 .techWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.1rem;
-    padding: 0.5rem;
-  }
-  
-  .techIcon {
-    font-size: 1.8rem; 
-    color: #000; 
-    transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.5rem;
+}
 
-    .dark &{
-      color: #000;
-    }
-  
-  }
-  
+.techIcon {
+  font-size: 1.8rem;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+:global(.dark) .techIcon {
+  color: #f5f5f5;
+}
