@@ -1,138 +1,85 @@
-// Estilos responsivos
-@media (max-width: 600px) {
-  .content {
-    .intro {
-      font-size: 2rem;
-    }
-  }
-}
-
-// Tema claro (padrão)
 .main {
-  height: 100svh;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  padding: 2rem;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: #faf9f8;
-  color: black;
-
-  // Dark mode quando body tiver a classe .dark
-  :global(body.dark) & {
-    background-color: #121212;
-    color: #f5f5f5;
-  }
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
 }
 
-.themeToggle {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  color: #f5c518;
-
-  &:hover {
-    transition: transform 0.3s ease;
-  }
-
-  :global(body.dark) & {
-    color: #ffd700;
-  }
-}
-
-a {
-  color: inherit;
-
-  &:hover {
-    color: gray;
-
-    :global(body.dark) & {
-      color: lightgray;
-    }
-  }
-}
-
-.header {
-  width: 100%;
+.leftGroup {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2rem;
-
-  > * {
-    flex: 1;
-  }
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin-bottom: 2rem;
 
   .themeToggle {
-    text-align: left;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
+  .techWrapper,
   .media {
-    justify-content: center;
-  }
-
-  .techWrapper {
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   text-align: center;
+  padding: 2rem;
 
   .intro {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: lighter;
+    font-size: 2rem;
     font-style: italic;
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-family: "Times New Roman", serif;
+    margin-bottom: 1rem;
   }
 
   .name {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    font-size: 4rem;
-    margin: -0.5rem 0;
+    font-size: 5rem;
+    font-family: "Times New Roman", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 
   .role {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: lighter;
-    font-size: 2rem;
-    text-decoration: underline;
+    font-size: 1.5rem;
+    font-family: "Times New Roman", serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
   }
 }
 
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
   position: absolute;
-  bottom: 1rem;
-  left: 0;
-  padding: 0 2rem;
-  box-sizing: border-box;
-}
-
-.footerLeft,
-.footerRight {
+  bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 
   a {
-    font-size: 1.8rem;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-family: "Times New Roman", serif;
     text-decoration: none;
-    color: black;
-    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: gray;

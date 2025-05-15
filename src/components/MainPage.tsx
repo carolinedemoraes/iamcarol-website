@@ -9,7 +9,7 @@ export function MainPage() {
 
     return (
         <div className={`${styles.main} ${theme}`}>
-            <div className={styles.header}>
+            <div className={styles.leftGroup}>
                 <button
                     onClick={toggleTheme}
                     className={styles.themeToggle}
@@ -28,16 +28,12 @@ export function MainPage() {
             </div>
 
             <div className={styles.footer}>
-                <div className={styles.footerLeft}>
-                    <Link to="/about" aria-label="About me page">About Me</Link><br />
-                    <Link to="/projects" aria-label="Projects page">Projects</Link>
-                </div>
-                <div className={styles.footerRight}>
-                    <Link to="/contact" aria-label="Contact page">
-                        Let's Work <br /> Together
-                    </Link>
-                </div>
+                <Link to="#" aria-label="About me page">About Me</Link>
+                <Link to="#" aria-label="Projects page">Projects</Link>
+                <Link to="#" aria-label="Contact page">Let's Work Together</Link>
+
             </div>
         </div>
+
     );
 }
