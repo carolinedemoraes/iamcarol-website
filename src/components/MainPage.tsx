@@ -28,9 +28,9 @@ export function MainPage() {
             </div>
 
             <div className={styles.footer}>
-                <Link to="#" aria-label="About me page">About Me</Link>
-                <Link to="#" aria-label="Projects page">Projects</Link>
-                <Link to="#" aria-label="Contact page">Let's Work Together</Link>
+                <Link to="#" aria-label="About me page" title="Coming Soon">About Me</Link>
+                <Link to="#" aria-label="Projects page" title="Coming Soon">Projects</Link>
+                <Link to="#" aria-label="Contact page" title="Coming Soon">Let's Work Together</Link>
 
             </div>
         </div>
