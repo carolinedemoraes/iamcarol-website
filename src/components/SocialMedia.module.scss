@@ -1,0 +1,30 @@
+.media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.icon {
+  font-size: 2rem;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    color: #555;
+  }
+}
+
+:global(.dark) .icon {
+  color: #f5f5f5;
+
+  &:hover {
+    color: #ccc;
+  }
+}

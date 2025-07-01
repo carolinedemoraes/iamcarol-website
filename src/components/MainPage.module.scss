@@ -1,0 +1,100 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+
+}
+
+.leftGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  .themeToggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .techWrapper,
+  .media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+
+  .intro {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 5rem;
+    font-family: "Times New Roman", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .role {
+    font-size: 1.5rem;
+    font-family: "Times New Roman", serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+  a {
+    font-size: 2rem;
+    font-family: "Times New Roman", serif;
+    text-decoration: none;
+
+    &:hover {
+      color: gray;
+    }
+
+    :global(body.dark) & {
+      color: #f5f5f5;
+
+      &:hover {
+        color: lightgray;
+      }
+    }
+
+    
+  }
+}
+
