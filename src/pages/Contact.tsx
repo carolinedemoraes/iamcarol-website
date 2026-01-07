@@ -1,29 +1,34 @@
-import { SocialMedia } from "../components/SocialMedia";
-import { Tech } from "../components/Tech";
-import './styles/Contact.scss';
+import styles from "./styles/Contact.module.scss";
 
 export function Contact() {
-    return (
+  return (
+    <section className={styles.contact}>
+      <div className={styles.contactContent}>
+        <h1 className={styles.contactTitle}>Let’s work together</h1>
 
-        <section className="contact">
-            <div className="contact__top">
-                <Tech />
-                <SocialMedia />
-            </div>
+        <p className={styles.contactText}>
+          I am a dedicated and responsible professional who is always learning.
+          <br />
+          <span className={styles.highlight}>Shall we work together?</span>
+        </p>
 
-            <div className="contact__content">
-                <h1 className="contact__title">Let's Work Together!</h1>
-                <p className="contact__text">
-                    I am a dedicated and responsible professional who is always learning.<br />
-                    Shall we work together?!<br />
-                    <strong>Contact me here:</strong>
-                </p>
+        <div className={styles.contactInfo}>
+          <p className={styles.contactLabel}>Contact:</p>
 
-                <div className="contact__info">
-                    <p>📞 +351 927 018 251</p>
-                    <p>✉️ <a href="mailto:caroliineedemoraes@gmail.com">caroliineedemoraes@gmail.com</a></p>
-                </div>
-            </div>
-        </section>
-    );
+          <a href="mailto:caroliineedemoraes@gmail.com">Email</a>
+
+          <a
+            href="https://www.linkedin.com/in/carolinemmoraes/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+
+          <a href="https://github.com/carolinedemoraes" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
