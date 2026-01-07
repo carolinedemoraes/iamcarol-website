@@ -1,0 +1,59 @@
+/* ========================
+   LAYOUT GLOBAL
+======================== */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.layout-content {
+  padding-top: var(--header-height, 80px);
+  display: flex;
+  flex-direction: column;
+
+  scroll-behavior: smooth;
+
+  /* Permite scroll real e evita barra branca */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  min-height: 100%;
+}
+
+/* ========================
+   MOBILE (≤767px)
+======================== */
+@media (max-width: 767px) {
+  .layout-content {
+    scroll-snap-type: none;
+  }
+
+  .layout-content > section {
+    height: auto;
+    min-height: auto;
+    padding-top: var(--header-height, 80px); /* garante que header não sobreponha */
+    scroll-snap-align: none;
+  }
+}
+
+/* ========================
+   TABLET + DESKTOP (≥768px)
+======================== */
+@media (min-width: 768px) {
+  .layout-content {
+    scroll-snap-type: y proximity; /* snap ativo */
+  }
+
+  .layout-content > section {
+    /* ⚡ Altura automática, sem barra branca */
+    min-height: 0;
+    height: auto;
+
+    padding-top: var(--header-height, 80px); /* espaço do header */
+    scroll-snap-align: start;
+
+    flex-shrink: 0; /* evita compressão inesperada */
+  }
+}

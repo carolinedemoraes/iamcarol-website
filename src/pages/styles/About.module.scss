@@ -1,0 +1,167 @@
+.aboutSection {
+  height: 100dvh;
+
+  padding-top: clamp(3rem, 6vh, 5rem);
+  padding-bottom: 3rem;
+  padding-inline: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  overflow-x: hidden;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  background-color: #faf9f8;
+  color: #222;
+
+  /* DARK MODE */
+  :global(html.dark) & {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+}
+
+/* FOTO */
+.profileWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+  border-radius: 18px;
+  border: 3px solid var(--primary, #f96d80);
+  background-color: #fff8e7;
+
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+
+  :global(html.dark) & {
+    background-color: #1a1a1a;
+    border-color: #ff7a92;
+  }
+}
+
+/* TEXTO */
+.content {
+  max-width: 680px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2.2rem, 6vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+
+  :global(html.dark) & {
+    color: #f2f2f2;
+  }
+}
+
+.highlight {
+  color: #f96d80;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+
+  :global(html.dark) & {
+    color: #ff7a92;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* Mobile médio */
+@media (min-width: 480px) {
+  .profileImage {
+    width: 230px;
+    height: 230px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* TABLET / DESKTOP */
+@media (min-width: 768px) {
+  .aboutSection {
+    justify-content: flex-start;
+  }
+
+  .content {
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .content p {
+    margin: 0;
+  }
+
+  .profileWrapper {
+    margin-bottom: 4rem;
+  }
+
+  .profileImage {
+    width: 260px;
+    height: 260px;
+    border-radius: 32px;
+    border: 2px solid var(--primary, #f96d80);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* 🔹 MOBILE PEQUENO: ajustar imagem e texto para caber */
+@media (max-width: 479px) {
+  .aboutSection {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .profileWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .profileImage {
+    width: 140px;
+    height: 140px;
+    border-radius: 14px;
+  }
+
+  .content {
+    gap: 0.2rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .highlight {
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+  }
+}
