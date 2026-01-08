@@ -1,7 +1,8 @@
 .aboutSection {
-  height: 100dvh;
+  min-height: 100dvh;
 
-  padding-top: clamp(3rem, 6vh, 5rem);
+  padding-top: calc(
+    var(--header-height, 80px) + clamp(1.5rem, 4vh, 3rem));
   padding-bottom: 3rem;
   padding-inline: 1.25rem;
 
@@ -105,6 +106,9 @@ p {
 @media (min-width: 768px) {
   .aboutSection {
     justify-content: flex-start;
+    padding-top: calc(
+      var(--header-height, 80px) + 1.5rem
+    );
   }
 
   .content {
@@ -132,7 +136,8 @@ p {
 /* 🔹 MOBILE PEQUENO: ajustar imagem e texto para caber */
 @media (max-width: 479px) {
   .aboutSection {
-    padding-top: 2rem;
+    min-height: auto;
+    padding-top: calc(var(--header-height, 40px) + 2rem);
     padding-bottom: 2rem;
     gap: 1rem;
   }
