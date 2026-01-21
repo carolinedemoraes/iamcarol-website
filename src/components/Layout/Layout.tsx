@@ -1,12 +1,9 @@
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
 import { useTheme } from "../useTheme";
 import { Header } from "../Header/Header";
+import { Outlet } from "react-router-dom";
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-export function Layout({ children }: LayoutProps) {
+export function Layout() {
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -20,7 +17,10 @@ export function Layout({ children }: LayoutProps) {
   return (
     <>
       <Header />
-      <main className="layout-content">{children}</main>
+
+      <main className="layout-content">
+        <Outlet />
+      </main>
     </>
   );
 }

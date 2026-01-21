@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import styles from "./MainPage.module.scss";
+import { Header } from "../Header/Header";
 
 export function MainPage() {
   return (
     <div className={styles.main}>
-      <div className={styles.leftGroup}></div>
+      <Header />
 
       <div className={styles.content}>
         <h1 className={styles.intro}>Hi,</h1>
@@ -20,7 +21,7 @@ export function MainPage() {
           About Me
         </Link>
         <Link
-          to="#"
+          to="/projects"
           aria-label="Projects page"
           title="Coming Soon"
           rel="noopener noreferrer"
