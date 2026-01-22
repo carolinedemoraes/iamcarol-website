@@ -1,8 +1,10 @@
+import { Header } from "../components/Header/Header";
 import styles from "./styles/About.module.scss";
 
 export function About() {
   return (
     <section className={styles.aboutSection}>
+      <Header />
       <div className={styles.profileWrapper}>
         <img
           src="/aboutme.jpg"

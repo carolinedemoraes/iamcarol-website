@@ -1,8 +1,10 @@
+import { Header } from "../components/Header/Header";
 import styles from "./styles/Contact.module.scss";
 
 export function Contact() {
   return (
     <section className={styles.contact}>
+      <Header />
       <div className={styles.contactContent}>
         <h1 className={styles.contactTitle}>Let’s work together</h1>
 
