@@ -1,4 +1,3 @@
-import { Header } from "../Header/Header";
 import { ProjectCard } from "./ProjectCard";
 import styles from "./ProjectsGrid.module.scss";
 
@@ -8,62 +7,85 @@ type Project = {
   description: string;
   techs: string[];
   size: "large" | "medium" | "small";
+  image?: string;
+  github?: string;
+  live?: string;
 };
-
 const projects: Project[] = [
   {
     id: 1,
-    title: "Portfólio Pessoal",
-    description: "UX, acessibilidade e dark mode.",
-    techs: ["React", "TypeScript", "Sass"],
+    title: "Pix Payment",
+    description:
+      "Payment flow via Pix with dynamic QR code generation and global status.",
+    techs: ["Next.js", "TypeScript", "Zustand"],
     size: "large",
+    image: "/pix.png",
+    live: "https://violetaeliz.org.br/quero-doar/metodos/pix",
   },
   {
     id: 2,
-    title: "Frontend Fusion",
-    description: "Projetos colaborativos.",
-    techs: ["React"],
+    title: "Violeta Eliz",
+    description:
+      "Institutional website developed using an original layout in Figma. I am part of the project's frontend development team.",
+    techs: ["React", "Sass", "Figma"],
     size: "medium",
+    image: "/violetaeliz.png",
+    live: "https://violetaeliz.com",
   },
+
   {
     id: 3,
-    title: "Interactive Rating",
-    description: "Frontend Mentor challenge.",
-    techs: ["HTML", "CSS", "JS"],
+    title: "Personal Portfólio",
+    description: "",
+    techs: ["React", "TypeScript", "Sass"],
     size: "medium",
   },
   {
     id: 4,
+    title: "Frontend Fusion",
+    description: "",
+    techs: ["React"],
+    size: "medium",
+  },
+  {
+    id: 5,
+    title: "Interactive Rating",
+    description: "",
+    techs: ["HTML", "CSS", "JS"],
+    size: "medium",
+  },
+  {
+    id: 6,
     title: "Formulário com Zod",
-    description: "Validação e UX.",
+    description: "",
     techs: ["React", "Zod"],
     size: "small",
   },
   {
-    id: 5,
+    id: 7,
     title: "Dark Mode",
-    description: "Persistência de tema.",
+    description: "",
     techs: ["CSS"],
     size: "small",
   },
+  /*
   {
-    id: 6,
+    id: 8,
     title: "Pix Payment",
     description: "Fluxo de pagamento.",
     techs: ["Next.js", "Zustand"],
     size: "small",
-  },
+  }, */
 ];
 
 export function ProjectsGrid() {
   return (
-    <main>
-      <Header />
-      <section className={styles.grid}>
+    <section className={styles.projectsSection}>
+      <div className={styles.grid}>
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
