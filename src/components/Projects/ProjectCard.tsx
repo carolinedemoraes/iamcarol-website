@@ -48,7 +48,6 @@ export function ProjectCard({
             {live && (
               <a href={live} target="_blank" rel="noreferrer">
                 <FiExternalLink />
-                Ver site
               </a>
             )}
           </div>
