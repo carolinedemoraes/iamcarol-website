@@ -14,16 +14,6 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Pix Payment",
-    description:
-      "Payment flow via Pix with dynamic QR code generation and global status.",
-    techs: ["Next.js", "TypeScript", "Zustand"],
-    size: "large",
-    image: "/pix.png",
-    live: "https://violetaeliz.org.br/quero-doar/metodos/pix",
-  },
-  {
-    id: 2,
     title: "Violeta Eliz",
     description:
       "Institutional website developed using an original layout in Figma. I am part of the project's frontend development team.",
@@ -31,6 +21,16 @@ const projects: Project[] = [
     size: "medium",
     image: "/violetaeliz.png",
     live: "https://violetaeliz.com",
+  },
+  {
+    id: 2,
+    title: "Pix Payment",
+    description:
+      "Payment flow via Pix with dynamic QR code generation and global status.",
+    techs: ["Next.js", "TypeScript", "Zustand"],
+    size: "large",
+    image: "/pix.png",
+    live: "https://violetaeliz.org.br/quero-doar/metodos/pix",
   },
 
   {

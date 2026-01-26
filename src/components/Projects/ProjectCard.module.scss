@@ -4,19 +4,39 @@
   flex-direction: column;
 
   background-color: #ffffff;
+  color: #222;
   border-radius: 24px;
   overflow: hidden;
 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   :global(html.dark) & {
-    background-color: #1a1a1a;
+    background-color: #1e1e1e;
+    color: #faf9f8;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
   }
 
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(255, 122, 146, 0.15);
+
+    :global(html.dark) & {
+      background-color: #232323;
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 122, 146, 0.18);
+    }
+
+     :global(html.dark) & {
+     .techs li {
+    color: #faf9f8 !important;
+    background-color: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  
   }
+  }
+}
 }
 
 .imageWrapper {
@@ -53,8 +73,13 @@ h3 {
 }
 
 p {
+  
   font-size: 0.95rem;
   opacity: 0.85;
+
+  :global(html.dark) & {
+    color: #cfcfcf;}
+
 }
 
 .techs {
@@ -71,12 +96,17 @@ p {
     color: #444;
 
     :global(html.dark) & {
-      background-color: #2a2a2a;
-      color: #ddd;
-    }
-  }
-}
 
+     .techs li {
+    color: #faf9f8 !important;
+    background-color: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  
+  }
+}}
+}
+  
+  
 .actions {
   margin-top: 0.5rem;
   display: flex;
@@ -91,6 +121,10 @@ p {
     font-weight: 500;
     color: #ff7a92;
     text-decoration: none;
+
+     :global(html.dark) & {
+      color: #ff8fa3;
+    }
 
     &:hover {
       text-decoration: underline;
