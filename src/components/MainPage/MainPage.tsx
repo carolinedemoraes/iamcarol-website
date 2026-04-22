@@ -13,17 +13,19 @@ export function MainPage() {
           <div className="max-w-[900px] text-center flex flex-col items-center gap-6">
             {/* HEADLINE (agora principal) */}
             <h1 className="text-[clamp(2.5rem,6vw,4rem)] font-semibold leading-tight">
-              Front-end Developer
+              Front-end Developer focused on building accessible and
+              user-friendly interfaces
             </h1>
 
             {/* SUBHEAD */}
             <p className="text-lg md:text-xl font-light max-w-xl opacity-80">
-              Focused on React, UX and accessible interfaces
+              Working with API integration, state management and reusable
+              components to create meaningful user experiences.
             </p>
 
             {/* NOME (assinatura, não protagonista) */}
-            <h2 className="text-xl md:text-2xl italic text-[#f96d80] dark:text-[#ff9cae]">
-              — Carol Moraes
+            <h2 className="text-xl md:text-4xl italic text-[#f96d80] dark:text-[#ff9cae]">
+              Hi, I'm Carol Moraes!
             </h2>
           </div>
 

@@ -1,5 +1,4 @@
 import { FeaturedProject } from "./FeaturedProject";
-import { ProjectsGrid } from "./ProjectsGrid";
 
 export function Projects() {
   return (
@@ -12,8 +11,8 @@ export function Projects() {
           </h2>
 
           <p className="text-lg opacity-70 max-w-xl mx-auto">
-            A selection of projects focused on UI, UX and real-world
-            functionality.
+            {/*A selection of projects focused on UI, UX and real-world
+            functionality.*/}
           </p>
         </div>
 
@@ -21,7 +20,7 @@ export function Projects() {
         <FeaturedProject />
 
         {/* OUTROS */}
-        <ProjectsGrid />
+        {/* <ProjectsGrid />*/}
       </div>
     </section>
   );

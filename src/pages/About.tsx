@@ -5,9 +5,9 @@ export function About() {
         {/* FOTO */}
         <div className="flex justify-center">
           <img
-            src="/aboutme.jpg"
-            alt="Carol sorrindo em frente a uma parede branca"
-            className="w-72 h-72 object-cover rounded-2xl shadow-md"
+            src="/aboutmepic.png"
+            alt="Carol sorrindo em frente a uma parede branca com detalhes coloridos na borda"
+            className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover"
           />
         </div>
 
@@ -18,35 +18,35 @@ export function About() {
           </h2>
 
           <p className="text-base md:text-lg leading-relaxed">
-            Hi! I’m <span className="text-[#f96d80]">Carol</span> — a Front-End
-            Developer with a background in{" "}
-            <span className="text-[#f96d80]">History</span>. That path taught me
-            to observe carefully, think critically, and collaborate with others.
+            Hi, I’m <span className="text-[#f96d80]">Carol</span> — a Frontend
+            Developer focused on building responsive React applications with
+            attention to UX and accessibility.
           </p>
 
           <p className="text-base md:text-lg leading-relaxed">
-            I discovered the world of{" "}
-            <span className="text-[#f96d80]">technology</span> during the
-            pandemic, and it was love at first line of code. Since then, I’ve
-            been diving into <span className="text-[#f96d80]">HTML</span>,{" "}
-            <span className="text-[#f96d80]">CSS</span>,{" "}
-            <span className="text-[#f96d80]">JavaScript</span>, and{" "}
-            <span className="text-[#f96d80]">React</span>.
+            With a background in <span className="text-[#f96d80]">History</span>
+            , I bring a strong analytical mindset, attention to detail, and a
+            collaborative approach to problem-solving.
           </p>
 
           <p className="text-base md:text-lg leading-relaxed">
-            I’m also passionate about{" "}
-            <span className="text-[#f96d80]">design</span>—exploring{" "}
-            <span className="text-[#f96d80]">Figma</span> helped me understand
-            how UX/UI and development work together to create meaningful digital
-            experiences.
+            I’ve worked on real-world projects involving{" "}
+            <span className="text-[#f96d80]">API integration</span>,{" "}
+            <span className="text-[#f96d80]">state management</span>, and{" "}
+            <span className="text-[#f96d80]">reusable UI components</span>,
+            always aiming to create intuitive and meaningful user experiences.
           </p>
 
           <p className="text-base md:text-lg leading-relaxed">
-            I currently live in <span className="text-[#f96d80]">Portugal</span>{" "}
-            🇵🇹 and I’m looking for my{" "}
-            <span className="text-[#f96d80]">first opportunity</span> in the
-            field. I’d love to connect and collaborate on something creative!
+            I’m particularly interested in the intersection between{" "}
+            <span className="text-[#f96d80]">design</span> and development,
+            using tools like <span className="text-[#f96d80]">Figma</span> to
+            bridge both worlds and build more thoughtful interfaces.
+          </p>
+
+          <p className="text-base md:text-lg leading-relaxed">
+            Currently based in <span className="text-[#f96d80]">Portugal</span>{" "}
+            🇵🇹, I’m open to opportunities across Europe and remote teams.
           </p>
         </div>
       </div>

@@ -35,7 +35,7 @@ export function ProjectsGrid() {
     <div className="space-y-10">
       {/* SUBTITLE */}
       <h3 className="text-xl font-medium text-center opacity-80">
-        Other Projects
+        Other Projects Soon
       </h3>
 
       {/* GRID */}
