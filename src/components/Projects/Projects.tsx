@@ -1,5 +1,4 @@
 import { FeaturedProject } from "./FeaturedProject";
-import { ProjectsGrid } from "./ProjectsGrid";
 
 export function Projects() {
   return (
@@ -21,7 +20,7 @@ export function Projects() {
         <FeaturedProject />
 
         {/* OUTROS */}
-        <ProjectsGrid />
+        {/* <ProjectsGrid />*/}
       </div>
     </section>
   );
