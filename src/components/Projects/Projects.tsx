@@ -12,8 +12,8 @@ export function Projects() {
           </h2>
 
           <p className="text-lg opacity-70 max-w-xl mx-auto">
-            A selection of projects focused on UI, UX and real-world
-            functionality.
+            {/*A selection of projects focused on UI, UX and real-world
+            functionality.*/}
           </p>
         </div>
 
