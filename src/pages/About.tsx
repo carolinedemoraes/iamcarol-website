@@ -5,7 +5,7 @@ export function About() {
         {/* FOTO */}
         <div className="flex justify-center">
           <img
-            src="/aboutmepic.png"
+            src="/imgaboutme.png"
             alt="Carol sorrindo em frente a uma parede branca com detalhes coloridos na borda"
             className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover"
           />
