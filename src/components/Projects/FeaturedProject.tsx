@@ -56,11 +56,11 @@ export function FeaturedProject() {
 
           {/* ACTION */}
           <a
-            href="https://violetaeliz.org.br/"
+            href="https://github.com/Projeto-FrontEnd-Fusion/Aceve-website-development"
             target="_blank"
             className="inline-block mt-2 text-[#f96d80] font-medium hover:underline"
           >
-            View Live Project →
+            Go to code →
           </a>
         </div>
       </div>
